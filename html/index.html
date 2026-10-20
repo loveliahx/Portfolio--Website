@@ -5,39 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Amber's Portfolio</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com"> <!--iMPORTED FONTS-->
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-  <!-- NAV -->
   <header id="navbar">
     <div class="container nav-wrap">
       <p class="logo">Amber's <span>Portfolio</span></p>
       <nav>
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
+        <a href="projects.html">Projects</a>
+        <a href="certificate.html">Certificates</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- ABOUT -->
   <section id="about">
     <div class="container about-wrap">
       <div class="about-text">
         <p class="eyebrow">Hi, I'm Amber Liah</p>
         <h1>Driven by ambition, ready for what's next.</h1>
         <p class="about-para">
-          I am a second-year Computer Science student aspiring to become a  
+          I am a second-year Computer Science student aspiring to become a
           software developer. I enjoy designing interfaces and creating projects that
           are both functional and creative. I'm constantly expanding my knowledge to
           become a more capable and competent professional in the tech industry.
         </p>
         <div class="btn-group">
-          <a href="#projects" class="btn btn-main">View projects</a>
+          <a href="projects.html" class="btn btn-main">View projects</a>
           <a href="#contact" class="btn btn-outline">Contact me</a>
         </div>
       </div>
@@ -47,7 +46,6 @@
     </div>
   </section>
 
-  <!-- SKILLS -->
   <section id="skills">
     <div class="container">
       <h2>Skills</h2>
@@ -70,50 +68,62 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
   <section id="projects">
     <div class="container">
       <h2>Projects</h2>
       <p class="section-sub">A compilation of projects that highlight my journey in programming and graphic design.</p>
 
-      <a class="link-box" href="https://drive.google.com/drive/folders/1jDMvG7tthFI6UA766GIXF4pP3yI51P7D?usp=sharing" target="_blank" rel="noopener noreferrer">
+      <a class="link-box" href="projects.html">
         <div class="link-box-inner">
           <h3>My Projects</h3>
-          <p>Click here to view all my projects on Google Drive &rarr;</p>
+          <p>Click here to view all my projects &rarr;</p>
         </div>
       </a>
     </div>
   </section>
 
-  <!-- CERTIFICATES-->
   <section id="certificates">
     <div class="container">
       <h2>Certificates</h2>
-      <p class="section-sub">Relevant certifications and credentials earned..</p>
+      <p class="section-sub">Relevant certifications and credentials earned.</p>
 
-      <a class="link-box" href="https://drive.google.com/drive/folders/1kywvE0MQEyfCKgLeM5riHOGBOMG3D2qb" target="_blank" rel="noopener noreferrer">
+      <a class="link-box" href="certificate.html">
         <div class="link-box-inner">
           <h3>My Certificates</h3>
-          <p>Click here to view all my certificates on Google Drive &rarr;</p>
+          <p>Click here to view all my certificates &rarr;</p>
         </div>
       </a>
     </div>
   </section>
 
-  <!-- CONTACT ME -->
   <section id="contact">
     <div class="container contact-box">
-      <div>
-        <h2>Let's work together</h2>
-        <p>email: amberesguerra.05@gmail.com</p>
+      <div class="contact-text">
+        <h2>Let's connect together</h2>
+        <p>Leave your email and a short message and I'll get back to you.</p>
       </div>
-      <a href="mailto:amberesguerra.05@gmail.com" class="btn btn-main">Say hello</a>
+
+      <form id="contact-form" class="contact-form">
+        <label for="visitor-email">Your email</label>
+        <input type="email" id="visitor-email" placeholder="you@example.com">
+
+        <label for="visitor-message">Message</label>
+        <textarea id="visitor-message" rows="4" placeholder="Say hello..."></textarea>
+
+        <button type="submit" class="btn btn-main">Say hello</button>
+        <p id="form-message"></p>
+      </form>
     </div>
   </section>
 
   <footer>
-    <p>&copy; 2026 Amber Liah. All rights reserved.</p>
+    <p>&copy; 2026 Amber Esguerra. All rights reserved.</p>
   </footer>
 
+  <script src="../js/script.js"></script>
+  <input type="email" id="visitor-email">
+  <textarea id="visitor-message"></textarea>
+  <p id="form-message"></p>
+  
 </body>
 </html>

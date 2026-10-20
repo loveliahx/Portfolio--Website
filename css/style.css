@@ -1,6 +1,6 @@
 /* =========================================
-   
-   Reference Color palette 
+
+   Reference Color palette
    dark text   = #231C33
    soft text   = #635C74
    purple      = #6E42D6
@@ -15,7 +15,7 @@
   --dark: #231C33;
   --soft-text: #635C74;
   --purple: #6E42D6;
-  --purple-dark: #5631AD; 
+  --purple-dark: #5631AD;
   --border: #D8D3E5;
   --tag-bg: #E6DFF5;
   --soft-bg: #F2EFF7;
@@ -44,14 +44,12 @@ a {
   color: inherit;
 }
 
-/* CONTAINER  */
 .container {
   max-width: 900px;
   margin: 0 auto;
   padding: 0 25px;
 }
 
-/* NAV */
 #navbar {
   border-bottom: 1px solid var(--border);
   padding: 18px 0;
@@ -170,7 +168,6 @@ a {
   display: block;
 }
 
-/* ===== SECTION =====*/
 section h2 {
   font-size: 26px;
   margin-bottom: 8px;
@@ -209,7 +206,6 @@ section h2 {
   font-weight: 500;
 }
 
-/* ===== PROJECTS + CERTIFICATES*/
 #projects, #certificates {
   padding: 60px 0;
 }
@@ -245,7 +241,41 @@ section h2 {
   background-color: var(--tag-bg);
 }
 
-/* ===== CONTACT ===== */
+.page-title {
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.cert-card,
+.project-card {
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 15px;
+  background-color: var(--soft-bg);
+  margin-bottom: 20px;
+}
+
+.cert-card img {
+  width: 100%;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.cert-card h3,
+.project-card h3 {
+  font-size: 17px;
+}
+
+.project-card {
+  border-style: dashed;
+}
+
+.project-card p {
+  color: var(--soft-text);
+  font-size: 14px;
+}
+
 #contact {
   padding: 60px 0;
 }
@@ -261,6 +291,11 @@ section h2 {
   gap: 20px;
 }
 
+.contact-text {
+  flex: 1;
+  min-width: 250px;
+}
+
 .contact-box h2 {
   margin-bottom: 8px;
 }
@@ -270,7 +305,47 @@ section h2 {
   font-size: 14px;
 }
 
-/* ===== FOOTER ===== */
+/* contact form */
+.contact-form {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-form label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: var(--purple);
+}
+
+.contact-form button {
+  border: none;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+
+#form-message {
+  margin-top: 12px;
+  color: var(--purple-dark);
+}
+
 footer {
   text-align: center;
   color: var(--soft-text);
@@ -296,6 +371,10 @@ footer {
     text-align: center;
     justify-content: center;
   }
+
+  .contact-form {
+    text-align: left;
+  }
 }
 
 /* TABLET VIEW */
@@ -318,4 +397,3 @@ footer {
     max-width: 260px;
   }
 }
-
